@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoverhuur Paassen - Exclusieve Auto's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" type="image/x-icon" href="../assets/autoverhuurpaassen-logo-transparent.png">
+</head>
+<body class="bg-[#261700]">
+    <div class="menu-mobile w-full h-screen fixed z-[999] bg-[#261700]">
+        <header class="w-full h-auto absolute top-0 left-0 right-0">
+            <nav class="max-w-[75rem] mx-auto py-[1.5rem] px-[1rem] flex justify-between items-center">
+                <a href="/home">
+                    <img src="../assets/autoverhuurpaassen-logo-transparent.png" class="max-w-[80px] lg:max-w-[100px]">
+                </a>
+                <div class="flex lg:hidden items-center gap-[1rem]">
+                    <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+                        <svg width="10px" height="10px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+                        
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+                        <svg width="10px" height="10px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#161]">
+                        
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <svg class="menu-close-icon cursor-pointer" width="30px" height="30px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-469.000000, -1041.000000)" fill="#fff">
+                                <path d="M487.148,1053.48 L492.813,1047.82 C494.376,1046.26 494.376,1043.72 492.813,1042.16 C491.248,1040.59 488.712,1040.59 487.148,1042.16 L481.484,1047.82 L475.82,1042.16 C474.257,1040.59 471.721,1040.59 470.156,1042.16 C468.593,1043.72 468.593,1046.26 470.156,1047.82 L475.82,1053.48 L470.156,1059.15 C468.593,1060.71 468.593,1063.25 470.156,1064.81 C471.721,1066.38 474.257,1066.38 475.82,1064.81 L481.484,1059.15 L487.148,1064.81 C488.712,1066.38 491.248,1066.38 492.813,1064.81 C494.376,1063.25 494.376,1060.71 492.813,1059.15 L487.148,1053.48" id="cross" sketch:type="MSShapeGroup">
+                    
+                    </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </nav>
+        </header>
+        <ul class="w-full h-full text-white flex flex-col items-center gap-[4rem] pt-[25vh] font-semibold">
+            <li><a href="/home" class="bg-[#362101] h-auto py-[1rem] px-[3rem] rounded-[5px] hover:bg-[#f8b434] transition">Home</a></li>
+            <li><a href="/aanbod" class="bg-[#362101] h-auto py-[1rem] px-[3rem] rounded-[5px] hover:bg-[#f8b434] transition">Ons aanbod</a></li>
+            <li><a href="/over-ons" class="bg-[#362101] h-auto py-[1rem] px-[3rem] rounded-[5px] hover:bg-[#f8b434] transition">Over ons</a></li>
+            <li><a href="/contact" class="bg-[#362101] h-auto py-[1rem] px-[3rem] rounded-[5px] hover:bg-[#f8b434] transition">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="hidden lg:fixed h-screen right-0 z-[99] flex flex-col justify-center gap-[1rem] pr-[1rem]">
+        <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+            <svg width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#fff">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+            
+            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+            <svg width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#161]">
+            
+            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <header class="header w-full h-auto fixed z-[100] top-0 left-0 right-0">
+        <nav class="max-w-[75rem] mx-auto py-[1.5rem] px-[1rem] flex justify-between items-center">
+            <a href="/home">
+                <img src="../assets/autoverhuurpaassen-logo-transparent.png" class="max-w-[80px] lg:max-w-[100px]">
+            </a>
+            <div class="flex lg:hidden items-center gap-[1rem]">
+                <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+                    <svg width="10px" height="10px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#fff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+                    
+                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="bg-[#f8b434] hover:bg-[#cf9529] transition p-[0.5rem] rounded-full">
+                    <svg width="10px" height="10px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#161]">
+                    
+                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <svg class="menu-open-icon cursor-pointer" width="30px" height="30px" viewBox="0 -2 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-310.000000, -1039.000000)" fill="#fff">
+                            <path d="M338,1049 L314,1049 C311.791,1049 310,1050.79 310,1053 C310,1055.21 311.791,1057 314,1057 L338,1057 C340.209,1057 342,1055.21 342,1053 C342,1050.79 340.209,1049 338,1049 L338,1049 Z M338,1059 L314,1059 C311.791,1059 310,1060.79 310,1063 C310,1065.21 311.791,1067 314,1067 L338,1067 C340.209,1067 342,1065.21 342,1063 C342,1060.79 340.209,1059 338,1059 L338,1059 Z M314,1047 L338,1047 C340.209,1047 342,1045.21 342,1043 C342,1040.79 340.209,1039 338,1039 L314,1039 C311.791,1039 310,1040.79 310,1043 C310,1045.21 311.791,1047 314,1047 L314,1047 Z" id="hamburger-2" sketch:type="MSShapeGroup">
+                
+                </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <ul class="text-white hidden lg:flex items-center gap-[2rem] font-semibold">
+                <li><a href="/home" class="hover:underline">Home</a></li>
+                <li><a href="/aanbod" class="hover:underline">Ons aanbod</a></li>
+                <li><a href="/over-ons" class="hover:underline">Over ons</a></li>
+                <li><a href="/contact" class="hover:underline">Contact</a></li>
+            </ul>
+            <a href="/aanbod" class="bg-[#f8b434] px-[1.5rem] py-[0.75rem] rounded-[5px] text-white font-semibold hover:bg-[#cf9529] transition hidden lg:block">Bekijk ons aanbod</a>
+        </nav>
+    </header>
+
+    <div class="w-full h-auto">
+        <div class="max-w-[75rem] h-full mx-auto pb-[8rem] pt-[12rem] px-[1rem] flex flex-col lg:flex-row gap-[4rem]">
+            <div class="w-full lg:w-1/2 h-full flex flex-col gap-[1rem]">
+                <a href="/aanbod" class="opacity-50 leading-[2] text-white underline text-[12px] text-center block lg:hidden">Terug naar het overzicht</a>
+                <h2 class="text-white text-[28px] lg:text-[32px] font-bold leading-[1] text-center mb-[1rem] block lg:hidden">Polo GTI</h2>
+                <img src="../assets/autoverhuurpaassen-polo-gti.png" class="w-full">
+            </div>
+            <div class="w-full lg:w-1/2 h-full flex flex-col gap-[1.5rem]">
+                <a href="/aanbod" class="opacity-50 leading-[2] text-white underline text-[12px] hidden lg:block">Terug naar het overzicht</a>
+                <h2 class="text-white text-[28px] lg:text-[32px] font-bold leading-[1] hidden lg:block">Polo GTI</h2>
+                <p class="opacity-80 leading-[2] text-white">Ontdek de Volkswagen Polo GTI, de compacte krachtpatser die sportiviteit en praktisch gebruik combineert. Met zijn dynamische design, energieke prestaties en moderne technologie is de Polo GTI de ideale keuze voor wie het beste van beide werelden zoekt: sportiviteit in een compact formaat. Of je nu door de stad slingert of een rit naar de kust maakt, de Polo GTI maakt elke rit bijzonder.</p>
+                <div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Motor:</span> 2.0 TSI benzinemotor, 207 pk</p>
+                    </div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Versnellingsbak:</span> 7-traps DSG automatische transmissie</p>
+                    </div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Acceleratie:</span> 0-100 km/u in 6,7 seconden</p>
+                    </div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Topsnelheid:</span> 240 km/u</p>
+                    </div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Verbruik:</span> Gemiddeld 6,5 l/100 km</p>
+                    </div>
+                    <div class="flex items-center gap-[0.5rem]">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f8b434">
+                            <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
+                            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
+                            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z"/>
+                            <rect fill="none" width="24" height="24"/>
+                        </svg>
+                        <p class="opacity-80 leading-[2] text-white"><span class="font-semibold text-[#f8b434]">Veiligheid:</span> Inclusief Lane Assist, Adaptive Cruise Control en Front Assist</p>
+                    </div>
+                </div>
+                <h3 class="text-white text-[18px] lg:text-[22px] font-bold leading-[1]">Waarom kiezen voor de Polo GTI bij Autoverhuur Paassen</h3>
+                <p class="opacity-80 leading-[2] text-white">De Polo GTI biedt een perfecte combinatie van sportieve prestaties en dagelijkse bruikbaarheid. Met 207 pk onder de motorkap en een snelle versnellingsbak ben je altijd klaar voor actie. Het compacte formaat maakt de auto wendbaar en ideaal voor stadsritten, terwijl de geavanceerde technologieën en veiligheidsfeatures zorgen voor een comfortabele en veilige rit.</p>
+                <p class="opacity-80 leading-[2] text-white font-semibold">Reserveer vandaag nog de Polo GTI en ervaar zelf de kracht en charme van deze sportieve hatchback!</p>
+                <a href="http://wa.me/31622369520?text=Goeiedag%21%20Ik%20heb%20interesse%20in%20het%20huren%20van%20de%20Polo%20GTI.%20Kun%20je%20me%20meer%20informatie%20geven%20over%20de%20huurvoorwaarden%20en%20beschikbaarheid%3F%20Alvast%20bedankt%21" class="bg-[#2bcc31] w-full px-[1.5rem] py-[0.75rem] rounded-[5px] flex items-center gap-[0.5rem] justify-center text-white font-semibold hover:bg-[#cf9529] transition">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#fff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#fff"/>
+                    </svg>
+                    Reserveer de Polo GTI
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-full h-auto px-[1rem]">
+        <div class="max-w-[75rem] px-[1rem] h-[70vh] lg:h-full mx-auto py-[4rem] rounded-[25px] bg-[url(../assets/autoverhuurpaassen-cta-home.png)] bg-cover bg-center flex flex-col items-center justify-center gap-[1.5rem]">
+            <h2 class="text-white text-[28px] lg:text-[32px] font-bold text-center leading-[1]">Beleef de adrenaline!</h2>
+            <p class="opacity-80 leading-[2] text-white max-w-[600px] text-center">Bij Autoverhuur Paassen kun je achter het stuur van de snelste en mooiste sportauto's plaatsnemen. Of je nu een rit door de stad maakt of de snelweg op gaat, wij zorgen voor een onvergetelijke rijervaring. Boek nu en voel de kracht van onze topmodellen!</p>
+            <div class="flex flex-col lg:flex-row items-center gap-[1rem]">
+                <a href="/aanbod" class="bg-[#f8b434] px-[1.5rem] py-[0.75rem] rounded-[5px] text-white font-semibold hover:bg-[#cf9529] transition">Bekijk ons aanbod</a>
+                <a href="/contact" class="text-white font-semibold hover:underline">Contact opnemen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-auto">
+        <div class="max-w-[75rem] px-[1rem] h-full mx-auto py-[8rem]">
+            <div class="w-full flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[4rem] mb-[2rem]">
+                <div class="w-full lg:w-1/2 h-full">
+                    <h2 class="text-white text-[28px] lg:text-[32px] font-bold">Neem vandaag nog contact op met Autoverhuur Paassen</h2>
+                </div>
+                <div class="w-full lg:w-1/2 h-full">
+                    <p class="opacity-80 leading-[2] text-white lg:text-end">Heb je vragen of wil je meer informatie over onze auto’s? Ons team staat klaar om je te helpen. Neem snel contact met ons op via telefoon of e-mail, en we zorgen ervoor dat je de beste ervaring krijgt bij Autoverhuur Paassen!</p>
+                </div>
+            </div>
+            <div class="w-full flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[4rem]">
+                <div class="w-full lg:w-1/2 h-full rounded-[25px] overflow-hidden linker-contact-div">
+                    <iframe
+                    width="100%"
+                    height="100%"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGLyMIf6dpdY4FnT9M23tgO6MJ4mLZDHw
+                        &q=Medler+10,Doetinchem">
+                    </iframe>
+                </div>
+                <div class="w-full lg:w-1/2 h-full rounded-[25px] bg-[#180f00] p-[2rem] rechter-contact-div">
+                    <h3 class="text-white text-[18px] lg:text-[22px] font-semibold leading-[1] mb-[1rem]">Contactformulier</h3>
+                    <p class="opacity-80 leading-[2] text-white mb-[1rem]">Liever even bellen of mailen? Onze experts staan elke werkdag van 09:00 t/m 17:00 voor je klaar om al je vragen te beantwoorden.</p>
+                    <form action="https://submit-form.com/KwyMo8mEi" class="w-full flex flex-col gap-[1rem]">
+                        <input
+                            type="hidden"
+                            name="_redirect"
+                            value="https://autoverhuurpaassen.nl/contact/succes"
+                        />
+                        <input
+                            type="hidden"
+                            name="_error"
+                            value="https://autoverhuurpaassen.nl/contact/error" 
+                        />
+                        <div class="w-full flex flex-col gap-[0.5rem]">
+                            <label for="naam" class="text-white opacity-80">Uw naam</label>
+                            <input type="text" name="naam" class="w-full px-[1rem] py-[0.5rem] rounded-[5px] bg-[#3a2300] text-white focus:outline-none" required>
+                        </div>
+                        <div class="w-full h-auto flex gap-[1rem]">
+                            <div class="w-1/2 flex flex-col gap-[0.5rem]">
+                                <label for="email" class="text-white opacity-80">E-mail</label>
+                                <input type="email" name="email" class="w-full px-[1rem] py-[0.5rem] rounded-[5px] bg-[#3a2300] text-white focus:outline-none" required>
+                            </div>
+                            <div class="w-1/2 flex flex-col gap-[0.5rem]">
+                                <label for="telefoonnummer" class="text-white opacity-80">Telefoonnummer</label>
+                                <input type="tel" name="telefoonnummer" class="w-full px-[1rem] py-[0.5rem] rounded-[5px] bg-[#3a2300] text-white focus:outline-none">
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col gap-[0.5rem]">
+                            <label for="onderwerp" class="text-white opacity-80">Onderwerp</label>
+                            <input type="text" name="onderwerp" class="w-full px-[1rem] py-[0.5rem] rounded-[5px] bg-[#3a2300] text-white focus:outline-none" required>
+                        </div>
+                        <div class="w-full flex flex-col gap-[0.5rem]">
+                            <label for="bericht" class="text-white opacity-80">Bericht</label>
+                            <textarea name="bericht" class="w-full px-[1rem] py-[0.5rem] rounded-[5px] bg-[#3a2300] text-white focus:outline-none" required></textarea>
+                        </div>
+                        <div class="h-captcha" data-sitekey="01dacec6-d21a-4fc4-8266-5420a2066afe"></div>
+                        <button type="submit" name="verzenden" class="text-white w-full bg-[#f8b434] hover:bg-[#cf9529] transition cursor-pointer py-[0.75rem] rounded-[5px] font-semibold">Verzenden</button>
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-auto bg-[#180f00]">
+        <div class="max-w-[75rem] mx-auto py-[4rem] px-[1rem] flex flex-col">
+            <div class="w-full h-auto flex flex-col lg:flex-row justify-between gap-[3rem] lg:gap-[4rem]">
+                <div class="w-full lg:w-1/4 h-full text-white flex flex-col items-center lg:items-start gap-[1rem]">
+                    <img src="../assets/autoverhuurpaassen-logo-transparent.png" class="max-w-[100px] lg:max-w-[150px]">
+                    <p class="opacity-80 leading-[2] text-center lg:text-start">Bij Autoverhuur Paassen vind je altijd de perfecte auto voor jouw reis. Of je nu een weekendje weg gaat, een zakenreis hebt of een langere vakantie plant, wij zorgen voor een betrouwbare en comfortabele rijervaring.</p>
+                </div>
+                <div class="w-full lg:w-3/4 h-full flex flex-col lg:flex-row items-center lg:items-start justify-between text-white gap-[1.5rem] lg:gap-[0]">
+                    <div class="flex flex-col items-center lg:items-start gap-[0.75rem]">
+                        <h6 class="font-semibold">Snelle navigatie</h6>
+                        <ul class="flex flex-col items-center lg:items-start gap-[0.25rem]">
+                            <li><a href="/home" class="hover:underline">Home</a></li>
+                            <li><a href="/aanbod" class="hover:underline">Aanbod</a></li>
+                            <li><a href="/over-ons" class="hover:underline">Over ons</a></li>
+                            <li><a href="/contact" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start gap-[0.75rem]">
+                        <h6 class="font-semibold">Klantenservice</h6>
+                        <ul class="flex flex-col items-center lg:items-start gap-[0.25rem]">
+                            <li><a href="/contact" class="hover:underline">Contact opnemen</a></li>
+                            <li><a href="/algemene-voorwaarden" class="hover:underline">Algemene voorwaarden</a></li>
+                            <li><a href="/privacybeleid" class="hover:underline">Privacybeleid</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start gap-[0.75rem]">
+                        <h6 class="font-semibold">Contactgegevens</h6>
+                        <ul class="flex flex-col items-center lg:items-start gap-[0.25rem] opacity-80">
+                            <li>Medler 10</li>
+                            <li>7006JZ Doetinchem</li>
+                            <li>Nederland</li>
+                        </ul>
+                        <ul class="flex flex-col items-center lg:items-start gap-[0.25rem] opacity-80">
+                            <li>KVK: 88859908</li>
+                            <li>BTW: NL004663178B73</li>
+                        </ul>
+                        <ul class="flex flex-col items-center lg:items-start gap-[0.25rem] opacity-80">
+                            <li>+31 (0) 6 48 71 47 57</li>
+                            <li>info@autoverhuurpaassen.nl</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-auto py-[0.5rem] bg-[#f8b434]">
+            <div class="max-w-[75rem] mx-auto px-[1rem] flex flex-col lg:flex-row text-white items-center justify-between">
+                <p class="text-[12px] font-semibold">Copyright © Alle rechten voorbehouden</p>
+                <p class="text-[12px] font-semibold">Powered by <a href="https://www.halfmanmedia.nl" target="_blank" class="text-[12px]">HalfmanMedia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
+</body>
+</html>
